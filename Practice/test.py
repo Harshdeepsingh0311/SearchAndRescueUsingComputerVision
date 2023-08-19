@@ -20,7 +20,7 @@ for contour in contours:
     result_image = img.copy()    
     cv2.drawContours(result_image, detected_triangles, -1, (0, 255, 0), 2)
         
-    # Display the result    
+# Display the result    
 cv2.imshow("Detected Triangles", result_image)    
 cv2.waitKey(0)    
 cv2.destroyAllWindows()
